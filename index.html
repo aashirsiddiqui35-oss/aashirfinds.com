@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aashir Finds - Discover Viral Gadgets</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ========================================== -->
+    <!-- FLOATING PARTICLES BACKGROUND -->
+    <!-- ========================================== -->
+    <div id="particles-container" class="particles-container"></div>
+
+    <!-- ========================================== -->
+    <!-- NAVBAR -->
+    <!-- ========================================== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <!-- Logo -->
+            <a href="#" class="logo">
+                <span class="logo-icon"><i class="fas fa-bolt"></i></span>
+                <span class="logo-text">Aashir Finds</span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#shop" class="nav-link">Shop</a></li>
+                <li><a href="#trending" class="nav-link">Trending</a></li>
+                <li><a href="#categories" class="nav-link">Categories</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <!-- Nav Icons -->
+            <div class="nav-icons">
+                <button class="icon-btn" id="searchBtn" aria-label="Search">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="icon-btn wishlist-btn-nav" id="wishlistBtnNav" aria-label="Saved Items">
+                    <i class="fas fa-bookmark"></i>
+                    <span class="cart-count" id="savedCount">0</span>
+                </button>
+                <!-- Mobile Menu Toggle -->
+                <button class="icon-btn hamburger" id="hamburger" aria-label="Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Search Bar (Hidden by default) -->
+        <div class="search-bar" id="searchBar">
+            <input type="text" placeholder="Search viral gadgets..." id="searchInput">
+            <button class="search-close" id="searchClose"><i class="fas fa-times"></i></button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <ul class="mobile-nav-links">
+                <li><a href="#home" class="mobile-link">Home</a></li>
+                <li><a href="#shop" class="mobile-link">Shop</a></li>
+                <li><a href="#trending" class="mobile-link">Trending</a></li>
+                <li><a href="#categories" class="mobile-link">Categories</a></li>
+                <li><a href="#about" class="mobile-link">About</a></li>
+                <li><a href="#contact" class="mobile-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ========================================== -->
+    <!-- HERO SECTION -->
+    <!-- ========================================== -->
+    <section class="hero" id="home">
+        <!-- Background Effects -->
+        <div class="hero-bg">
+            <div class="glow-circle glow-1"></div>
+            <div class="glow-circle glow-2"></div>
+            <div class="glow-circle glow-3"></div>
+            <div class="gradient-overlay"></div>
+        </div>
+
+        <div class="hero-container">
+            <!-- Left Content -->
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-fire"></i>
+                    <span>TikTok Viral Finds</span>
+                </div>
+                <h1 class="hero-title">
+                    Discover Viral Gadgets<br>
+                    <span class="gradient-text">Before Everyone Else</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Trending tech, smart accessories, and TikTok-famous products curated just for you. 
+                    Find the hottest gadgets on the internet and grab them before they sell out.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#shop" class="btn btn-primary">
+                        <i class="fas fa-compass"></i>
+                        Explore Now
+                    </a>
+                    <a href="#trending" class="btn btn-secondary">
+                        <i class="fas fa-arrow-right"></i>
+                        See Trends
+                    </a>
+                </div>
+                <!-- Stats -->
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="50000">0</span>
+                        <span class="stat-label">Happy Visitors</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="200">0</span>
+                        <span class="stat-label">Viral Products</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="99">0</span>
+                        <span class="stat-label">% Satisfaction</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Content - Hero Image -->
+            <div class="hero-image-wrapper">
+                <div class="hero-image-container">
+                    <div class="hero-image-glow"></div>
+                    <img src="web2 products/Gemini_Generated_Image_dxb0akdxb0akdxb0.png" alt="Featured Viral Gadget" class="hero-image" id="heroImage">
+                    <!-- Floating Elements -->
+                    <div class="floating-card card-1">
+                        <i class="fas fa-star"></i>
+                        <span>4.9 Rating</span>
+                    </div>
+                    <div class="floating-card card-2">
+                        <i class="fas fa-link"></i>
+                        <span>Direct Links</span>
+                    </div>
+                    <div class="floating-card card-3">
+                        <i class="fas fa-fire"></i>
+                        <span>Trending #1</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- FEATURED PRODUCTS SECTION -->
+    <!-- ========================================== -->
+    <section class="featured-products" id="shop">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <span class="section-badge">New Arrivals</span>
+                <h2 class="section-title">Featured Products</h2>
+                <p class="section-subtitle">Handpicked viral gadgets trending right now - Links coming soon!</p>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="product-grid">
+                <!-- Product 1: Mini Portable Projector -->
+                <div class="product-card" data-product="Mini Portable Projector">
+                    <div class="product-image-wrapper">
+                        <div class="product-badge">Best Seller</div>
+                        <button class="wishlist-btn" aria-label="Save for later">
+                            <i class="far fa-bookmark"></i>
+                        </button>
+                        <img src="web2 products/projector.jpg" alt="Mini Portable Projector" class="product-image">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.8)</span>
+                        </div>
+                        <h3 class="product-name">Mini Portable Projector</h3>
+                        <p class="product-desc">Cinema anywhere - HD projection in your pocket</p>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="coming-soon-badge"><i class="fas fa-clock"></i> Coming Soon</span>
+                            </div>
+                            <button class="affiliate-btn" data-product="Mini Portable Projector">
+                                <i class="fas fa-external-link-alt"></i>
+                                Get Link
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2: Sunset Projection Lamp -->
+                <div class="product-card" data-product="Sunset Projection Lamp">
+                    <div class="product-image-wrapper">
+                        <div class="product-badge hot">Hot</div>
+                        <button class="wishlist-btn" aria-label="Save for later">
+                            <i class="far fa-bookmark"></i>
+                        </button>
+                        <img src="web2 products/31Dk3WMBdCL._AC_SR70_.jpg" alt="Sunset Projection Lamp" class="product-image">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(5.0)</span>
+                        </div>
+                        <h3 class="product-name">Sunset Projection Lamp</h3>
+                        <p class="product-desc">Transform any room into a sunset paradise</p>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="coming-soon-badge"><i class="fas fa-clock"></i> Coming Soon</span>
+                            </div>
+                            <button class="affiliate-btn" data-product="Sunset Projection Lamp">
+                                <i class="fas fa-external-link-alt"></i>
+                                Get Link
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3: Portable Blender Bottle -->
+                <div class="product-card" data-product="Portable Blender Bottle">
+                    <div class="product-image-wrapper">
+                        <button class="wishlist-btn" aria-label="Save for later">
+                            <i class="far fa-bookmark"></i>
+                        </button>
+                        <img src="web2 products/miniblender.webp" alt="Portable Blender Bottle" class="product-image">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(4.2)</span>
+                        </div>
+                        <h3 class="product-name">Portable Blender Bottle</h3>
+                        <p class="product-desc">Blend smoothies anywhere, anytime</p>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="coming-soon-badge"><i class="fas fa-clock"></i> Coming Soon</span>
+                            </div>
+                            <button class="affiliate-btn" data-product="Portable Blender Bottle">
+                                <i class="fas fa-external-link-alt"></i>
+                                Get Link
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4: Smart Water Bottle -->
+                <div class="product-card" data-product="Smart Water Bottle">
+                    <div class="product-image-wrapper">
+                        <div class="product-badge new">New</div>
+                        <button class="wishlist-btn" aria-label="Save for later">
+                            <i class="far fa-bookmark"></i>
+                        </button>
+                        <img src="web2 products/smartbottle.jpg" alt="Smart Water Bottle" class="product-image">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.7)</span>
+                        </div>
+                        <h3 class="product-name">Smart Water Bottle</h3>
+                        <p class="product-desc">Stay hydrated with temperature tracking</p>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="coming-soon-badge"><i class="fas fa-clock"></i> Coming Soon</span>
+                            </div>
+                            <button class="affiliate-btn" data-product="Smart Water Bottle">
+                                <i class="fas fa-external-link-alt"></i>
+                                Get Link
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5: Pocket Thermal Printer -->
+                <div class="product-card" data-product="Pocket Thermal Printer">
+                    <div class="product-image-wrapper">
+                        <button class="wishlist-btn" aria-label="Save for later">
+                            <i class="far fa-bookmark"></i>
+                        </button>
+                        <img src="web2 products/printer.webp" alt="Pocket Thermal Printer" class="product-image">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(4.9)</span>
+                        </div>
+                        <h3 class="product-name">Pocket Thermal Printer</h3>
+                        <p class="product-desc">Print photos & labels from your phone</p>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="coming-soon-badge"><i class="fas fa-clock"></i> Coming Soon</span>
+                            </div>
+                            <button class="affiliate-btn" data-product="Pocket Thermal Printer">
+                                <i class="fas fa-external-link-alt"></i>
+                                Get Link
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6: Handheld Vacuum Cleaner -->
+                <div class="product-card" data-product="Handheld Vacuum Cleaner">
+                    <div class="product-image-wrapper">
+                        <div class="product-badge">Popular</div>
+                        <button class="wishlist-btn" aria-label="Save for later">
+                            <i class="far fa-bookmark"></i>
+                        </button>
+                        <img src="web2 products/vacuum.jpg" alt="Handheld Vacuum Cleaner" class="product-image">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.6)</span>
+                        </div>
+                        <h3 class="product-name">Handheld Vacuum Cleaner</h3>
+                        <p class="product-desc">Powerful suction in a compact design</p>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="coming-soon-badge"><i class="fas fa-clock"></i> Coming Soon</span>
+                            </div>
+                            <button class="affiliate-btn" data-product="Handheld Vacuum Cleaner">
+                                <i class="fas fa-external-link-alt"></i>
+                                Get Link
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 7: Electric Coffee Mixer -->
+                <div class="product-card" data-product="Electric Coffee Mixer">
+                    <div class="product-image-wrapper">
+                        <button class="wishlist-btn" aria-label="Save for later">
+                            <i class="far fa-bookmark"></i>
+                        </button>
+                        <img src="web2 products/7d942e267dceb9b411e075e1db8e4336.jpg_720x720q80.jpg" alt="Electric Coffee Mixer" class="product-image">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(4.3)</span>
+                        </div>
+                        <h3 class="product-name">Electric Coffee Mixer</h3>
+                        <p class="product-desc">Perfect froth for your morning coffee</p>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="coming-soon-badge"><i class="fas fa-clock"></i> Coming Soon</span>
+                            </div>
+                            <button class="affiliate-btn" data-product="Electric Coffee Mixer">
+                                <i class="fas fa-external-link-alt"></i>
+                                Get Link
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 8: Rechargeable Mini Fan -->
+                <div class="product-card" data-product="Rechargeable Mini Fan">
+                    <div class="product-image-wrapper">
+                        <div class="product-badge hot">Hot</div>
+                        <button class="wishlist-btn" aria-label="Save for later">
+                            <i class="far fa-bookmark"></i>
+                        </button>
+                        <img src="web2 products/minifan.jpg" alt="Rechargeable Mini Fan" class="product-image">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.5)</span>
+                        </div>
+                        <h3 class="product-name">Rechargeable Mini Fan</h3>
+                        <p class="product-desc">Stay cool anywhere with USB charging</p>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="coming-soon-badge"><i class="fas fa-clock"></i> Coming Soon</span>
+                            </div>
+                            <button class="affiliate-btn" data-product="Rechargeable Mini Fan">
+                                <i class="fas fa-external-link-alt"></i>
+                                Get Link
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 9: Automatic Stirring Mug -->
+                <div class="product-card" data-product="Automatic Stirring Mug">
+                    <div class="product-image-wrapper">
+                        <div class="product-badge new">New</div>
+                        <button class="wishlist-btn" aria-label="Save for later">
+                            <i class="far fa-bookmark"></i>
+                        </button>
+                        <img src="web2 products/stirringmug.webp" alt="Automatic Stirring Mug" class="product-image">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(4.8)</span>
+                        </div>
+                        <h3 class="product-name">Automatic Stirring Mug</h3>
+                        <p class="product-desc">Self-stirring magic for perfect drinks</p>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="coming-soon-badge"><i class="fas fa-clock"></i> Coming Soon</span>
+                            </div>
+                            <button class="affiliate-btn" data-product="Automatic Stirring Mug">
+                                <i class="fas fa-external-link-alt"></i>
+                                Get Link
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- View All Button -->
+            <div class="text-center">
+                <a href="#" class="btn btn-outline">View All Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- TRENDING BANNER SECTION -->
+    <!-- ========================================== -->
+    <section class="trending-banner" id="trending">
+        <div class="trending-bg">
+            <div class="trending-particles" id="trendingParticles"></div>
+        </div>
+        <div class="trending-content">
+            <div class="trending-icon">
+                <i class="fas fa-fire"></i>
+            </div>
+            <h2 class="trending-title">Trending Now on TikTok</h2>
+            <p class="trending-subtitle">Limited time deals on viral gadgets - Links dropping soon!</p>
+            
+            <!-- Countdown Timer -->
+            <div class="countdown" id="countdown">
+                <div class="countdown-item">
+                    <span class="countdown-number" id="hours">24</span>
+                    <span class="countdown-label">Hours</span>
+                </div>
+                <div class="countdown-separator">:</div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="minutes">00</span>
+                    <span class="countdown-label">Minutes</span>
+                </div>
+                <div class="countdown-separator">:</div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="seconds">00</span>
+                    <span class="countdown-label">Seconds</span>
+                </div>
+            </div>
+
+            <a href="#shop" class="btn btn-glow">
+                <i class="fas fa-compass"></i>
+                Explore Products
+            </a>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- CATEGORIES SECTION -->
+    <!-- ========================================== -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Browse</span>
+                <h2 class="section-title">Shop by Category</h2>
+                <p class="section-subtitle">Find exactly what you're looking for</p>
+            </div>
+
+            <div class="categories-grid">
+                <!-- Category 1: Gaming -->
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3 class="category-name">Gaming</h3>
+                    <p class="category-count">45 Products</p>
+                    <div class="category-glow"></div>
+                </div>
+
+                <!-- Category 2: Smart Home -->
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3 class="category-name">Smart Home</h3>
+                    <p class="category-count">32 Products</p>
+                    <div class="category-glow"></div>
+                </div>
+
+                <!-- Category 3: Mobile Accessories -->
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="category-name">Mobile Accessories</h3>
+                    <p class="category-count">68 Products</p>
+                    <div class="category-glow"></div>
+                </div>
+
+                <!-- Category 4: Desk Setup -->
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3 class="category-name">Desk Setup</h3>
+                    <p class="category-count">41 Products</p>
+                    <div class="category-glow"></div>
+                </div>
+
+                <!-- Category 5: Travel Gadgets -->
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h3 class="category-name">Travel Gadgets</h3>
+                    <p class="category-count">27 Products</p>
+                    <div class="category-glow"></div>
+                </div>
+
+                <!-- Category 6: Viral Tech -->
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="category-name">Viral Tech</h3>
+                    <p class="category-count">56 Products</p>
+                    <div class="category-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- WHY CHOOSE US SECTION -->
+    <!-- ========================================== -->
+    <section class="why-choose-us" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Why Us</span>
+                <h2 class="section-title">Why Choose Aashir Finds</h2>
+                <p class="section-subtitle">We curate the best viral gadget experience for you</p>
+            </div>
+
+            <div class="features-grid">
+                <!-- Feature 1 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-link"></i>
+                    </div>
+                    <h3 class="feature-title">Direct Links</h3>
+                    <p class="feature-desc">We find the best deals and provide direct affiliate links to trusted sellers so you get the best prices.</p>
+                    <div class="feature-glow"></div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Trusted Sources</h3>
+                    <p class="feature-desc">All products are linked from verified and reputable online stores with secure checkout processes.</p>
+                    <div class="feature-glow"></div>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3 class="feature-title">Trending Products</h3>
+                    <p class="feature-desc">We curate only the most viral and trending gadgets before they blow up on social media.</p>
+                    <div class="feature-glow"></div>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                    <h3 class="feature-title">Instant Alerts</h3>
+                    <p class="feature-desc">Get notified the moment new viral gadgets drop so you never miss out on the next big thing.</p>
+                    <div class="feature-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- TESTIMONIAL SECTION -->
+    <!-- ========================================== -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Reviews</span>
+                <h2 class="section-title">What Visitors Say</h2>
+                <p class="section-subtitle">Join thousands of happy gadget discoverers</p>
+            </div>
+
+            <div class="testimonial-slider" id="testimonialSlider">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-slide active">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Found the Mini Portable Projector through Aashir Finds and it changed my movie nights completely! The affiliate link took me straight to the best deal."</p>
+                        <div class="testimonial-author">
+                            <img src="images/customer1.jpg" alt="Customer" class="testimonial-avatar">
+                            <div class="testimonial-info">
+                                <h4>Sarah Mitchell</h4>
+                                <span>Verified Visitor</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-slide">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"The Sunset Projection Lamp was exactly what I saw on TikTok. Aashir Finds made it super easy to find the right seller with the best price!"</p>
+                        <div class="testimonial-author">
+                            <img src="images/customer2.jpg" alt="Customer" class="testimonial-avatar">
+                            <div class="testimonial-info">
+                                <h4>Jason Rodriguez</h4>
+                                <span>Verified Visitor</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-slide">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="testimonial-text">"The Pocket Thermal Printer is my new favorite gadget. Aashir Finds connected me to the perfect store. Quality is amazing and shipping was fast!"</p>
+                        <div class="testimonial-author">
+                            <img src="images/customer3.jpg" alt="Customer" class="testimonial-avatar">
+                            <div class="testimonial-info">
+                                <h4>Emily Chen</h4>
+                                <span>Verified Visitor</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="testimonial-slide">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Love how Aashir Finds curates only the best viral products. The Smart Water Bottle link saved me money compared to other sites!"</p>
+                        <div class="testimonial-author">
+                            <img src="images/customer4.jpg" alt="Customer" class="testimonial-avatar">
+                            <div class="testimonial-info">
+                                <h4>Michael Thompson</h4>
+                                <span>Verified Visitor</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slider Navigation -->
+            <div class="slider-nav">
+                <button class="slider-dot active" data-slide="0"></button>
+                <button class="slider-dot" data-slide="1"></button>
+                <button class="slider-dot" data-slide="2"></button>
+                <button class="slider-dot" data-slide="3"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- NEWSLETTER SECTION -->
+    <!-- ========================================== -->
+    <section class="newsletter" id="contact">
+        <div class="newsletter-bg">
+            <div class="newsletter-glow"></div>
+        </div>
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-icon">
+                    <i class="fas fa-bell"></i>
+                </div>
+                <h2 class="newsletter-title">Stay in the Loop</h2>
+                <p class="newsletter-subtitle">Get notified about viral gadgets and exclusive deals before anyone else.</p>
+                
+                <form class="newsletter-form" id="newsletterForm">
+                    <div class="newsletter-input-wrapper">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" placeholder="Enter your email address" required id="newsletterEmail">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-glow" id="newsletterSubmitBtn">
+                        <i class="fas fa-paper-plane"></i>
+                        <span id="newsletterBtnText">Subscribe</span>
+                    </button>
+                </form>
+                
+                <div class="newsletter-success" id="newsletterSuccess" style="display: none;">
+                    <i class="fas fa-check-circle"></i>
+                    <span>You're subscribed! Check your inbox for confirmation.</span>
+                </div>
+                
+                <p class="newsletter-note">
+                    <i class="fas fa-lock"></i>
+                    We respect your privacy. Unsubscribe anytime.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- FOOTER -->
+    <!-- ========================================== -->
+    <footer class="footer">
+        <div class="footer-glow"></div>
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Brand Column -->
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <span class="logo-icon"><i class="fas fa-bolt"></i></span>
+                        <span class="logo-text">Aashir Finds</span>
+                    </a>
+                    <p class="footer-desc">Your #1 destination for viral gadgets, TikTok-famous tech, and trending lifestyle products. We find the best deals so you don't have to.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#shop">Explore All</a></li>
+                        <li><a href="#trending">Trending</a></li>
+                        <li><a href="#categories">Categories</a></li>
+                        <li><a href="#">New Arrivals</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="#">Link Requests</a></li>
+                        <li><a href="#">Track Order</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:hello@aashirfinds.com">hello@aashirfinds.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+1234567890">+1 (234) 567-890</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Tech Street, Digital City</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 Aashir Finds. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================== -->
+    <!-- SAVED ITEMS SIDEBAR -->
+    <!-- ========================================== -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3><i class="fas fa-bookmark"></i> Saved Items</h3>
+            <button class="cart-close" id="cartClose"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Saved items will be added here dynamically -->
+            <div class="cart-empty" id="cartEmpty">
+                <i class="fas fa-bookmark"></i>
+                <p>No saved items yet</p>
+                <span>Bookmark products you like!</span>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Items Saved:</span>
+                <span class="total-price" id="cartTotal">0</span>
+            </div>
+            <button class="btn btn-primary btn-full" onclick="document.getElementById('shop').scrollIntoView({behavior: 'smooth'})">
+                <i class="fas fa-compass"></i>
+                Browse Products
+            </button>
+        </div>
+    </div>
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <!-- ========================================== -->
+    <!-- TOAST NOTIFICATION -->
+    <!-- ========================================== -->
+    <div class="toast" id="toast">
+        <i class="fas fa-check-circle"></i>
+        <span id="toastMessage">Saved!</span>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- SCROLL TO TOP BUTTON -->
+    <!-- ========================================== -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- ========================================== -->
+    <!-- JAVASCRIPT -->
+    <!-- ========================================== -->
+    <script src="script.js"></script>
+</body>
+</html>
